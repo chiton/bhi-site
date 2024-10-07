@@ -1,0 +1,1 @@
+atlas clusters index create --projectId 5e38a620c56c98f8d4c39e73 --clusterName identity-prod-accounts --collection users --db identity-prod-accounts --key email:1 --key deletedAt:1
