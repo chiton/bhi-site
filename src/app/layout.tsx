@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import face from "@public/icons8-facebook-30.png";
-import inst from "@public/icons8-instagram-30.png";
-import twit from "@public/icons8-x-30.png";
+import face from "public/icons8-facebook-30.png";
+import inst from "public/icons8-instagram-30.png";
+import twit from "public/icons8-x-30.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
