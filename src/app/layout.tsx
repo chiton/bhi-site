@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import face from "/public/icons8-facebook-30.png";
-import inst from "/public/icons8-instagram-30.png";
-import twit from "/public/icons8-x-30.png";
+import TopBarNav from "@/components/TopNavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,35 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <header>
-          <nav>
-            <ul>
-              <li><a href="#home">INICIO</a></li>
-              <li><a href="#services">SERVICIOS</a></li>
-              <li><a href="#testimonials">TESTIMONIOS</a></li>
-              <li><a href="#contact">CONTACTO</a></li>
-              <li><a href="https://www.facebook.com/BHIViajes?ref=ts">
-                <Image
-                  src={face}
-                  width={30}
-                  height={30}
-                  alt="Fecebook" />
-              </a></li>
-              <li><a href="https://www.instagram.com/bhiviajesbahia/?hl=es">
-                <Image
-                  src={inst}
-                  width={30}
-                  height={30}
-                  alt="Instagram" />
-              </a></li>
-              <li><a href="https://x.com/BHIVIAJES">
-                <Image
-                  src={twit}
-                  width={30}
-                  height={30}
-                  alt="X" />
-              </a></li>
-            </ul>
-          </nav>
+          <TopBarNav />
         </header>
         {children}
         <footer>
