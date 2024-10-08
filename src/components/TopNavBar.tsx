@@ -94,7 +94,7 @@ const TopBarNav = () => {
                 }
             `}</style>
             </div>
-            <Script>
+            <Script id="toggle-script">
                 {`
                 const navToggle = document.querySelector('.nav-toggle');
                 const navItems = document.querySelector('.nav-items');
