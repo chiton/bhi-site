@@ -70,7 +70,7 @@ const TopBarNav = () => {
                     align-items: center;
                 }
 
-                @media (max-width: 768px) {
+                @media (max-width: 1024px) {
                     .nav-container {
                         justify-content: start;
                     }
