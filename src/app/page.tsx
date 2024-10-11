@@ -44,7 +44,7 @@ export default function Home() {
           </div>
           <div className="service-item">
             <h3>Pasajes de bus</h3>
-            <p>Compra tus pasajes de bus de manera rápida y sencilla.</p>
+            <p>Compra tus pasajes de bus de manera rápida y sencilla haciendo click <a href="/bus">aqui</a>.</p>
           </div>
           <div className="service-item">
             <h3>Alquiler de autos</h3>
