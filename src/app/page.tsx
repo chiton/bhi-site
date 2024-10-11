@@ -28,11 +28,11 @@ export default function Home() {
         <div className="services-list">
           <div className="service-item">
             <h3>Reserva de vuelos</h3>
-            <p>Encuentra las mejores ofertas en vuelos nacionales e internacionales.</p>
+            <p>Encuentra las mejores ofertas en vuelos nacionales e internacionales <a href="https://bhiviajes.paquetedinamico.com/">aquí</a>.</p>
           </div>
           <div className="service-item">
             <h3>Reserva en hoteles</h3>
-            <p>Accede a una amplia selección de hoteles en todo el mundo.</p>
+            <p>Accede a una amplia selección de hoteles en todo el mundo <a href="https://bhiviajes.paquetedinamico.com/">aquí</a>.</p>
           </div>
           <div className="service-item">
             <h3>Paquetes turísticos</h3>
@@ -44,7 +44,7 @@ export default function Home() {
           </div>
           <div className="service-item">
             <h3>Pasajes de bus</h3>
-            <p>Compra tus pasajes de bus de manera rápida y sencilla haciendo click <a href="/bus">aqui</a>.</p>
+            <p>Compra tus pasajes de bus de manera rápida y sencilla haciendo click <a href="/bus">aquí</a>.</p>
           </div>
           <div className="service-item">
             <h3>Alquiler de autos</h3>
