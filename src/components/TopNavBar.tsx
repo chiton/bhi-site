@@ -3,7 +3,7 @@
 import Image from "next/image";
 import face from "/public/icons8-facebook-30.png";
 import inst from "/public/icons8-instagram-30.png";
-import twit from "/public/icons8-x-30.png";
+import twit from "/public/x-social-media-round-icon.png";
 import Script from "next/script";
 
 const TopBarNav = () => {
