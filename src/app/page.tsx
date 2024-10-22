@@ -75,7 +75,7 @@ export default function Home() {
       <section id="contact">
         <h2>Contactanos</h2>
         <div className="contact-details">
-          <p><strong>Teléfono:</strong> +54 0291 - 4566070</p>
+          <p><strong>Teléfono:</strong> +54 291 - 5037575</p>
           <p><strong>Email:</strong> info@bhiviajes.com</p>
           <p><strong>Dirección:</strong> Caronti 127, Bahía Blanca, Argentina</p>
         </div>
