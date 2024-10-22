@@ -17,6 +17,7 @@ const TopBarNav = () => {
                     <li><a href="/#home">INICIO</a></li>
                     <li className="submenu"><a href="/#services">SERVICIOS</a></li>
                     <li><a href="/bus">PASAJES DE BUS</a></li>
+                    <li><a href="https://app.bhiviajes.com.ar/home/dashboard">RESERVAR</a></li>
                     <li><a href="https://bhiviajes.paquetedinamico.com/">ARMA TU VIAJE</a></li>
                     <li><a href="/#testimonials">TESTIMONIOS</a></li>
                     <li><a href="/#contact">CONTACTO</a></li>
@@ -70,7 +71,7 @@ const TopBarNav = () => {
                     align-items: center;
                 }
 
-                @media (max-width: 1024px) {
+                @media (max-width: 1060px) {
                     .nav-container {
                         justify-content: start;
                     }
