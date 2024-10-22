@@ -26,7 +26,7 @@ export default function RootLayout({
         </header>
         {children}
         <footer>
-          <p>BHI Viajes - info@bhiviajes.com.ar - Tel: 0291 - 4566070 - Caronti 127, Bahía Blanca, Argentina</p>
+          <p>BHI Viajes - info@bhiviajes.com.ar - Cel: 291-5037575 - Caronti 127, Bahía Blanca, Argentina</p>
         </footer>
       </body>
     </html>
