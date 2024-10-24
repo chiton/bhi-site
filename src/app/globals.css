@@ -67,7 +67,7 @@ body {
 /* Services section styles */
 .services-section {
   padding: 2rem;
-  background-color: #D8D7DA;
+  background-color: #CDCDCC;
 }
 
 .services-title {
@@ -87,11 +87,12 @@ body {
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .service-item a {
   text-decoration: underline;
+  color: blue;
 }
 
 .service-item h3 {
