@@ -1,63 +1,55 @@
 'use client'
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
-const TestimonialsCarousel = () => {
-    return (
-        <Carousel showThumbs={false} autoPlay infiniteLoop>
-            <div>
-                <blockquote>
-                    <p>&quot;Excelente viaje! Muy buena onda Lucho y Enzo! 👌&quot; - Gabriel Dulsan</p>
-                </blockquote>
-            </div>
-            <div>
-                <blockquote>
-                    <p>&quot;Gracias, hermoso viaje!!!&quot; - Ayluu Sanchez</p>
-                </blockquote>
-            </div>
-            <div>
-                <blockquote>
-                    <p>&quot;Todo fue hermoso y perfecto. Hasta el clima. Gracias por tanto!&quot; - Azzara Rausch</p>
-                </blockquote>
-            </div>
-            <div>
-                <blockquote>
-                    <p>&quot;Que lindo!!!! Hermoso viaje !! Muchas gracias Lucho y Nico👏&quot; - Diana Blazquez</p>
-                </blockquote>
-            </div>
-            <div>
-                <blockquote>
-                    <p>&quot;Hermoso viaje....gracias&quot; - Mirta Bonjour</p>
-                </blockquote>
-            </div>
-            <div>
-                <blockquote>
-                    <p>&quot;Super recomendable 👍👍👍&quot; - Noel Vera</p>
-                </blockquote>
-            </div>
-            <div>
-                <blockquote>
-                    <p>&quot;Excelente viaje, super recomendable en cuanto al confort del Bus, trato, ubicación en el estadio, el cuidado y seguridad de los pasajeros. Gracias!&quot; - Silvia Saez</p>
-                </blockquote>
-            </div>
-            <div>
-                <blockquote>
-                    <p>&quot;Grande lucho, más q recomendable el viaje con ustedes, abrazo grande&quot; - Cristian Antonio Sandalich</p>
-                </blockquote>
-            </div>
-            <div>
-                <blockquote>
-                    <p>&quot;🙌👏gracias! Excelente!&quot; - Maria Laura Plasencia</p>
-                </blockquote>
-            </div>
-            <div>
-                <blockquote>
-                    <p>&quot;Espectacular viaje 😚 muchas gracias por todo!!&quot; - Vicki Ama</p>
-                </blockquote>
-            </div>
-        </Carousel>
-    );
-};
+const testimonials = [
+  { text: "Excelente viaje! Muy buena onda Lucho y Enzo!", author: "Gabriel Dulsan" },
+  { text: "Gracias, hermoso viaje!!!", author: "Ayluu Sanchez" },
+  { text: "Todo fue hermoso y perfecto. Hasta el clima. Gracias por tanto!", author: "Azzara Rausch" },
+  { text: "Que lindo viaje, muchas gracias por todo el acompanamiento.", author: "Diana Blazquez" },
+  { text: "Super recomendable en confort y trato. Gracias!", author: "Silvia Saez" },
+  { text: "Espectacular viaje, gracias por todo.", author: "Vicki Ama" },
+];
 
-export default TestimonialsCarousel;
+export default function TestimonialsCarousel() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((prev) => (prev + 1) % testimonials.length);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div className="max-w-4xl mx-auto">
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -16 }}
+          transition={{ duration: 0.35 }}
+          className="testimonial-card"
+        >
+          <p className="text-2xl text-orange-500 mb-3">&ldquo;</p>
+          <p className="text-lg md:text-xl text-slate-700 italic">{testimonials[index].text}</p>
+          <p className="mt-5 text-sm font-semibold tracking-wide uppercase text-slate-500">{testimonials[index].author}</p>
+        </motion.div>
+      </AnimatePresence>
+
+      <div className="mt-5 flex justify-center gap-2">
+        {testimonials.map((item, dotIndex) => (
+          <button
+            key={item.author}
+            onClick={() => setIndex(dotIndex)}
+            className={`h-2.5 rounded-full transition-all ${dotIndex === index ? "w-7 bg-slate-700" : "w-2.5 bg-slate-300 hover:bg-slate-400"}`}
+            aria-label={`Ver testimonio ${dotIndex + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
