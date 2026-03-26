@@ -33,10 +33,26 @@ const services = [
 ];
 
 const highlights = [
-  "Reserva flexible",
-  "Atención personalizada",
-  "Soporte durante tu viaje",
-  "Pago seguro",
+  {
+    title: "Reserva flexible",
+    description: "Cambios y ajustes simples según disponibilidad.",
+    icon: "🧭",
+  },
+  {
+    title: "Atención personalizada",
+    description: "Un asesor real que entiende tu estilo de viaje.",
+    icon: "🤝",
+  },
+  {
+    title: "Soporte durante tu viaje",
+    description: "Te acompañamos antes, durante y después.",
+    icon: "💬",
+  },
+  {
+    title: "Pago seguro",
+    description: "Operaciones protegidas y confirmaciones claras.",
+    icon: "🔒",
+  },
 ];
 
 const destinations = ["Brasil", "Caribe", "Patagonia", "Europa"];
@@ -103,12 +119,24 @@ export default function Home() {
       </section>
 
       <section className="border-y border-slate-200 bg-white">
-        <div className="container-custom px-4 py-4 grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          {highlights.map((item) => (
-            <div key={item} className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-700">
-              {item}
-            </div>
-          ))}
+        <div className="container-custom px-4 py-8">
+          <div className="text-center max-w-2xl mx-auto mb-6">
+            <p className="text-xs tracking-[0.2em] uppercase text-slate-500">Por qué elegirnos</p>
+            <h2 className="mt-2 text-3xl md:text-4xl text-slate-900">Cuidamos cada detalle de tu viaje</h2>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {highlights.map((item) => (
+              <div
+                key={item.title}
+                className="rounded-2xl border border-slate-200 bg-slate-50/80 px-4 py-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+              >
+                <p className="text-2xl" aria-hidden="true">{item.icon}</p>
+                <h3 className="mt-3 text-lg text-slate-900">{item.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-600">{item.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
