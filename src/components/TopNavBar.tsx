@@ -58,7 +58,7 @@ export default function TopBarNav() {
               </a>
             ))}
             <a
-              href="https://bhiviajes.paquetedinamico.com/"
+              href="https://bhiviajes.e-agencias.com/"
               className="ml-1 rounded-lg bg-orange-500 px-3 py-2 text-sm font-semibold text-white hover:bg-orange-600 transition"
             >
               Arma tu viaje
@@ -110,7 +110,7 @@ export default function TopBarNav() {
                 ))}
               </div>
               <a
-                href="https://bhiviajes.paquetedinamico.com/"
+                href="https://bhiviajes.e-agencias.com/"
                 className="rounded-lg bg-orange-500 px-3 py-2 text-xs font-semibold text-white hover:bg-orange-600"
               >
                 Arma tu viaje

@@ -9,13 +9,13 @@ const services = [
   {
     title: "Vuelos y hoteles",
     description: "Combinaciones flexibles para escapadas cortas o vacaciones largas.",
-    href: "https://bhiviajes.paquetedinamico.com/?tripType=ONLY_FLIGHT",
+    href: "https://bhiviajes.e-agencias.com/vuelos",
     icon: "✈️",
   },
   {
     title: "Paquetes a medida",
     description: "Diseñamos el viaje con ritmo, presupuesto y estilo personal.",
-    href: "https://bhiviajes.paquetedinamico.com/",
+    href: "https://bhiviajes.e-agencias.com/",
     icon: "🧳",
   },
   {
@@ -63,7 +63,7 @@ export default function Home() {
       <section className="border-b border-sky-100 bg-sky-50 text-sm text-slate-700">
         <div className="container-custom px-4 py-2 flex items-center justify-center gap-3 text-center">
           <span>Ofertas de temporada activas</span>
-          <a href="https://bhiviajes.paquetedinamico.com/" className="font-semibold text-sky-700 underline underline-offset-2">
+          <a href="https://bhiviajes.e-agencias.com/" className="font-semibold text-sky-700 underline underline-offset-2">
             Ver promociones
           </a>
         </div>
@@ -96,7 +96,7 @@ export default function Home() {
             </p>
 
             <div className="mt-7 flex flex-col sm:flex-row gap-3">
-              <a href="https://bhiviajes.paquetedinamico.com/" className="btn-primary text-base">
+              <a href="https://bhiviajes.e-agencias.com/" className="btn-primary text-base">
                 Empezar mi viaje
               </a>
               <a href="#contact" className="btn-secondary text-base">
