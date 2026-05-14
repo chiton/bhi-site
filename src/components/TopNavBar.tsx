@@ -10,7 +10,8 @@ const links = [
   { href: "/#home", label: "Inicio" },
   { href: "/#services", label: "Servicios" },
   { href: "/bus", label: "Bus" },
-  { href: "https://app.bhiviajes.com.ar/home/dashboard", label: "Reservar" },
+  { href: "/apartments", label: "Alquiler Temporario" },
+  { href: "https://app.bhiviajes.com.ar/home/dashboard", label: "Viajes" },
   { href: "/#testimonials", label: "Opiniones" },
   { href: "/#contact", label: "Contacto" },
 ];
