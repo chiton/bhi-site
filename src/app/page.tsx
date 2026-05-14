@@ -25,11 +25,17 @@ const services = [
     icon: "🚌",
   },
   {
-    title: "Asesoría completa",
-    description: "Te acompañamos antes, durante y después del viaje.",
-    href: "#contact",
-    icon: "🤝",
+    title: "Alquiler temporario",
+    description: "Departamentos equipados para estadías cortas, viajes de trabajo o escapadas.",
+    href: "/apartments",
+    icon: "🏠",
   },
+  // {
+  //   title: "Asesoría completa",
+  //   description: "Te acompañamos antes, durante y después del viaje.",
+  //   href: "#contact",
+  //   icon: "🤝",
+  // },
 ];
 
 const highlights = [
