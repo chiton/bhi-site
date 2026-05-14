@@ -54,7 +54,7 @@ const apartments: Apartment[] = [
   // },
 ];
 
-export default function DepartamentosPage() {
+export default function Apartments() {
   return (
     <main className="bg-white pt-16 text-slate-900">
       <section className="border-b border-slate-200 bg-slate-50">
