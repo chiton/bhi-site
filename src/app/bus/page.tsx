@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    alternates: {
+        canonical: "https://bhiviajes.tur.ar/bus",
+    },
+};
 
 export default function Bus() {
     return (
