@@ -20,6 +20,17 @@ type Apartment = {
 
 const apartments: Apartment[] = [
   {
+    name: "Bahía Blanca Lavalle 218",
+    location: "Lavalle 218, Bahía Blanca - 1er piso por escalera",
+    image: "/lavalle01.jpg",
+    price: "Consultar tarifa",
+    capacity: "Consultar",
+    rooms: "Consultar",
+    description:
+      "Departamento temporario en Bahia Blanca, ubicado en primer piso por escalera. La estadía incluye luz y Wi-Fi.",
+    amenities: ["Wi-Fi", "Luz incluida", "1er piso por escalera"],
+  },
+  {
     name: "Tandil Parque Independencia",
     location: "Tandil, zona Avdas. Rivadavia y Avellaneda",
     image: "/depto-tandil.jpg",

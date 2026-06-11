@@ -216,7 +216,14 @@ export default function Home() {
             <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm text-center">
               <p className="text-2xl">📍</p>
               <h3 className="mt-3 text-xl text-slate-900">Dirección</h3>
-              <p className="mt-1 text-slate-600">Caronti 127, Bahía Blanca</p>
+              <a
+                href="https://maps.app.goo.gl/o3SqgLsoBUeKeqH88"
+                className="mt-1 inline-block text-sky-700 underline underline-offset-2 hover:text-sky-900"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Caronti 127, Bahía Blanca
+              </a>
             </div>
           </div>
 
@@ -248,7 +255,16 @@ export default function Home() {
               <ul className="mt-3 space-y-2 text-sm text-slate-600">
                 <li>+54 291 5037575</li>
                 <li>info@bhiviajes.com.ar</li>
-                <li>Caronti 127, Bahía Blanca</li>
+                <li>
+                  <a
+                    href="https://maps.app.goo.gl/o3SqgLsoBUeKeqH88"
+                    className="footer-link underline underline-offset-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Caronti 127, Bahía Blanca
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
