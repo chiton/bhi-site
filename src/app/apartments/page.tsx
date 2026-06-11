@@ -24,8 +24,8 @@ const apartments: Apartment[] = [
     location: "Lavalle 218, Bahía Blanca - 1er piso por escalera",
     image: "/lavalle01.jpg",
     price: "Consultar tarifa",
-    capacity: "Consultar",
-    rooms: "Consultar",
+    capacity: "Hasta 2 huéspedes",
+    rooms: "1 dormitorio",
     description:
       "Departamento temporario en Bahia Blanca, ubicado en primer piso por escalera. La estadía incluye luz y Wi-Fi.",
     amenities: ["Wi-Fi", "Luz incluida", "1er piso por escalera"],
